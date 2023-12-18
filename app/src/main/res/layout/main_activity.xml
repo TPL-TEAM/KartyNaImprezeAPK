@@ -8,6 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="JD"
-        android:textSize="100dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textSize="100dp" />
 </LinearLayout>
