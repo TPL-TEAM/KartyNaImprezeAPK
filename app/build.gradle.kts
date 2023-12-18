@@ -50,9 +50,7 @@ android {
         }
     }
     buildFeatures{
-        viewBinding {
-            enabled = true
-        }
+        viewBinding = true
     }
 }
 
