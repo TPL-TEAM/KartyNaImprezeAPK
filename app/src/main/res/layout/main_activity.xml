@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="50dp"
         android:text="@string/graj"
         android:background="@color/purple_200"
 
@@ -27,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
         android:text="@string/opcje"
         android:background="@color/purple_200"
         />
@@ -36,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
         android:text="@string/dodatki"
         android:background="@color/purple_200"
 
