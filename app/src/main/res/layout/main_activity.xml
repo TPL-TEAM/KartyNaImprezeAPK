@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="JD"
+        android:text="@string/Menu"
         android:textAlignment="center"
-        android:textSize="100dp" />
+        android:textSize="100sp" />
+
+    <Button
+        android:id="@+id/graj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/graj"
+        android:background="@color/purple_200"
+
+        />
+
+    <Button
+        android:id="@+id/opcje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/opcje"
+        android:background="@color/purple_200"
+        />
+
+    <Button
+        android:id="@+id/dodatki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dodatki"
+        android:background="@color/purple_200"
+
+        />
 </LinearLayout>

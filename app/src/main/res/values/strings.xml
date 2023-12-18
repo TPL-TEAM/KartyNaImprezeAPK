@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Karty Melanzowe</string>
-    <string name="DDD"/>
+    <string name="Menu">Menu</string>
+    <string name="graj">graj</string>
+    <string name="opcje">opcje</string>
+    <string name="dodatki">dodatki</string>
 </resources>
