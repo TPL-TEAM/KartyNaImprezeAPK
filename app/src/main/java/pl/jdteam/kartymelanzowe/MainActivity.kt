@@ -12,11 +12,11 @@ class MainActivity : ComponentActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ibutton_graj.setOnClickListener(){
+        binding.graj.setOnClickListener(){
             val przelacz_graj = Intent(applicationContext, GrajAc::class.java)
             startActivity(przelacz_graj)
         }
-        binding.opcje.setOnClickListener(){
+        binding.ustawienia.setOnClickListener(){
             val przelacz_opcje = Intent(applicationContext, UstawieniaAc::class.java)
             startActivity(przelacz_opcje)
         }

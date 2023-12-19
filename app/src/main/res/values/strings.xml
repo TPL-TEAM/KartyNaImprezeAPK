@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Karty Melanzowe</string>
     <string name="Menu">Menu</string>
-    <string name="graj">graj</string>
-    <string name="opcje">opcje</string>
-    <string name="dodatki">dodatki</string>
+    <string name="graj">Graj</string>
+    <string name="opcje">Opcje</string>
+    <string name="dodatki">Dodatki</string>
+    <string name="wykonane">Wykonane</string>
+    <string name="niewykonane">nie Wykonane</string>
 </resources>

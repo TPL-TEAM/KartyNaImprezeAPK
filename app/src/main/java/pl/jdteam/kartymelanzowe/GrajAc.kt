@@ -1,5 +1,6 @@
 package pl.jdteam.kartymelanzowe
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import pl.jdteam.kartymelanzowe.databinding.ActivityGrajBinding
@@ -10,7 +11,10 @@ class GrajAc : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGrajBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.kat1.setOnClickListener(){
+            val przelacz_graj = Intent(applicationContext, GrajAc::class.java)
+            startActivity(przelacz_graj)
+        }
         intent.action
     }
 }
