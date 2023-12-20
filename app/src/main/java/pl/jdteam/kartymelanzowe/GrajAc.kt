@@ -15,6 +15,14 @@ class GrajAc : AppCompatActivity() {
             val przelacz_graj = Intent(applicationContext, GrajAc::class.java)
             startActivity(przelacz_graj)
         }
-        intent.action
+        binding.kat1.setOnClickListener(){
+
+        }
+        binding.kat2.setOnClickListener(){
+
+        }
+        binding.kat3.setOnClickListener(){
+
+        }
     }
 }
