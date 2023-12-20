@@ -12,6 +12,7 @@
         android:layout_height="56dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="76dp"
+        android:background="@drawable/ksztalt_1xml"
         android:text="@string/wykonane"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +24,7 @@
         android:layout_width="138dp"
         android:layout_height="56dp"
         android:layout_marginBottom="76dp"
+        android:background="@drawable/ksztalt_1xml"
         android:text="@string/niewykonane"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,11 +33,13 @@
 
     <Button
         android:id="@+id/karta"
-        android:layout_width="258dp"
-        android:layout_height="457dp"
-        android:layout_marginTop="72dp"
-        android:background="#00FFFFFF"
+        android:layout_width="320dp"
+        android:layout_height="520dp"
+
+        android:layout_marginTop="48dp"
+        android:background="@drawable/ksztalt_1xml"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
