@@ -11,35 +11,36 @@
         android:layout_width="138dp"
         android:layout_height="56dp"
         android:layout_marginEnd="84dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/ksztalt_1xml"
         android:text="@string/wykonane"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/nie_wykonane"
         android:layout_width="138dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/ksztalt_1xml"
         android:text="@string/niewykonane"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/karta"
         android:layout_width="320dp"
         android:layout_height="520dp"
+        android:layout_marginTop="50dp"
 
-        android:layout_marginTop="48dp"
         android:background="@drawable/ksztalt_1xml"
+        android:backgroundTint="@drawable/revolt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
