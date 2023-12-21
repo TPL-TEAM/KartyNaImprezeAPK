@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Karty Melanzowe</string>
+    <string name="Karta" tools:ignore="ExtraTranslation">Karta</string>
     <string name="Menu">Menu</string>
     <string name="graj">Graj</string>
     <string name="opcje">Opcje</string>
     <string name="dodatki">Dodatki</string>
-    <string name="wykonane">Wykonane</string>
-    <string name="niewykonane">nie Wykonane</string>
+    <string name="niewykonane">dalej</string>
 </resources>
