@@ -12,10 +12,9 @@ class GrajAc : ComponentActivity() {
         binding = ActivityGrajBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.kat1.setOnClickListener(){
-            val przelacz_graj = Intent(applicationContext, GameplayAc::class.java)
-            startActivity(przelacz_graj)
+            val przelacz_gameplay = Intent(applicationContext, GameplayAc::class.java)
+            startActivity(przelacz_gameplay)
         }
-
         binding.kat2.setOnClickListener(){
 
         }
