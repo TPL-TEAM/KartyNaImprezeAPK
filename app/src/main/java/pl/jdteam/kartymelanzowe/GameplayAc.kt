@@ -39,13 +39,14 @@ class GameplayAc : ComponentActivity() {
         }
 
         binding.karta.setOnClickListener(){
-            if(lista[losowe]==binding.karta.text){
-                if(lista1.isNotEmpty()){
+            if(lista1.isNotEmpty()){
+                if(lista1[losowe1]!=binding.karta.text){
                     if(check == 1){
-                        lista.removeAt(losowe)
+                        lista1.removeAt(losowe1)
                     }
                     if(lista1.size == 1){
-                        binding.karta.text = lista[0]
+                        binding.karta.text = lista1[0]
+
                         lista1.clear()
 
                     }
@@ -54,8 +55,8 @@ class GameplayAc : ComponentActivity() {
                         binding.karta.text = lista1[losowe1]
                         check = 1
                     }
-                }else{binding.karta.text = "Koniec Gry!"}
-            }
+                }
+            }else{binding.karta.text = "Koniec Gry!"}
         }
 
 
