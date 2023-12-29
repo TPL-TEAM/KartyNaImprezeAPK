@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import pl.jdteam.kartymelanzowe.databinding.ActivityGameplayBinding
 import kotlin.random.Random
+import kotlin.random.nextInt
 
 class GameplayAc : ComponentActivity() {
     private lateinit var binding: ActivityGameplayBinding
@@ -18,50 +19,10 @@ class GameplayAc : ComponentActivity() {
 
         val array1: Array<String> = resources.getStringArray(R.array.wyzwania)
         val lista1 = array1.toCollection(ArrayList())
-        var losowe1 = Random.nextInt(0, lista1.size-1)
+        var losowe1 = 1
+        var check = 0
 
         binding.karta.text = lista[losowe]
-
-        binding.karta.setOnClickListener(){
-            binding.karta.text = lista1[losowe1]
-            if(binding.karta.text != lista1[losowe1]) {
-
-
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-            if(lista1.isNotEmpty()){
-                lista1.removeAt(losowe1)
-                if(binding.karta.text != lista1[losowe1]) {
-                    if (lista1.size == 1) {
-
-                        binding.karta.text = lista1[0]
-                        lista1.clear()
-
-                    } else {
-                        losowe1 = Random.nextInt(0, lista1.size - 1)
-                        binding.karta.text = lista1[losowe1]
-
-                    }
-                }
-            }else{binding.karta.text = "Brak wyzwań!"}
-
-        }
-
-
-
-
-
         binding.nieWykonane.setOnClickListener(){
             if(lista.isNotEmpty()){
                 lista.removeAt(losowe)
@@ -75,7 +36,28 @@ class GameplayAc : ComponentActivity() {
                     binding.karta.text = lista[losowe]
                 }
             }else{binding.karta.text = "Koniec Gry!"}
-
         }
+
+        binding.karta.setOnClickListener(){
+            if(lista[losowe]==binding.karta.text){
+                if(lista1.isNotEmpty()){
+                    if(check == 1){
+                        lista.removeAt(losowe)
+                    }
+                    if(lista1.size == 1){
+                        binding.karta.text = lista[0]
+                        lista1.clear()
+
+                    }
+                    else{
+                        losowe1 = Random.nextInt(0, lista1.size-1)
+                        binding.karta.text = lista1[losowe1]
+                        check = 1
+                    }
+                }else{binding.karta.text = "Koniec Gry!"}
+            }
+        }
+
+
     }
 }
