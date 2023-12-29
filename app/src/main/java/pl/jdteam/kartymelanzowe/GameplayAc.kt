@@ -24,6 +24,22 @@ class GameplayAc : ComponentActivity() {
 
         binding.karta.setOnClickListener(){
             binding.karta.text = lista1[losowe1]
+            if(binding.karta.text != lista1[losowe1]) {
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
             if(lista1.isNotEmpty()){
                 lista1.removeAt(losowe1)
                 if(binding.karta.text != lista1[losowe1]) {
