@@ -6,55 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".GrajAc">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="119dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/kat1"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/kat1"
-        app:layout_constraintTop_toTopOf="@+id/kat1"
-        app:srcCompat="@drawable/revolt" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-33dp">
 
-    <Button
-        android:id="@+id/kat1"
-        android:layout_width="156dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/ksztalt_1xml"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp">
 
-    <Button
-        android:id="@+id/kat2"
-        android:layout_width="156dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="168dp"
-        android:background="@drawable/ksztalt_1xml"
-        app:layout_constraintStart_toEndOf="@+id/kat1"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/kat1"
+                android:layout_width="156dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ksztalt_1xml"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/kat3"
-        android:layout_width="156dp"
-        android:layout_height="206dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="72dp"
-        android:background="@drawable/ksztalt_1xml"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kat1" />
-    <Button
-        android:id="@+id/ustawienia"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/ksztalt_1xml"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/kat2"
+                android:layout_width="156dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ksztalt_1xml"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toEndOf="@+id/kat1"
+                app:layout_constraintTop_toBottomOf="@+id/kat1" />
+
+            <Button
+                android:id="@+id/kat3"
+                android:layout_width="156dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/ksztalt_1xml"
+                app:layout_constraintEnd_toStartOf="@+id/kat2"
+                app:layout_constraintTop_toBottomOf="@+id/kat2" />
+
+            <Button
+                android:id="@+id/kat4"
+                android:layout_width="156dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/ksztalt_1xml"
+                app:layout_constraintStart_toEndOf="@+id/kat3"
+                app:layout_constraintTop_toBottomOf="@+id/kat3" />
+
+            <Button
+                android:id="@+id/ustawienia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ksztalt_1xml"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.917"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

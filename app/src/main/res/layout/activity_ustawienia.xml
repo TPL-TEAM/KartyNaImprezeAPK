@@ -6,4 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".UstawieniaAc">
 
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch7"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch6"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="208dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch5" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch5"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch7" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch8"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch6" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch9"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch8" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch10"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch9" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch11"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch10" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch12"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch11" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch13"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch12" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch14"
+                android:layout_width="100dp"
+                android:layout_height="500dp"
+                android:text="@string/Menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch13" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
