@@ -9,8 +9,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-33dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -21,10 +21,10 @@
                 android:id="@+id/kat1"
                 android:layout_width="156dp"
                 android:layout_height="206dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/ksztalt_1xml"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintHorizontal_bias="0.133"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,8 +53,8 @@
                 android:id="@+id/kat4"
                 android:layout_width="156dp"
                 android:layout_height="206dp"
-                android:layout_marginTop="32dp"
                 android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/ksztalt_1xml"
                 app:layout_constraintStart_toEndOf="@+id/kat3"
                 app:layout_constraintTop_toBottomOf="@+id/kat3" />
