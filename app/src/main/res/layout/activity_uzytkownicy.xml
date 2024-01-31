@@ -43,19 +43,21 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/gracz2"
                 android:layout_width="168dp"
                 android:layout_height="39dp"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text"
                 android:text="Name"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintTop_toBottomOf="@+id/gracz1" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/gracz1"
                 android:layout_width="168dp"
                 android:layout_height="39dp"
                 android:layout_marginTop="40dp"
@@ -75,11 +77,11 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="2dp"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+                app:layout_constraintBottom_toBottomOf="@+id/gracz1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.529"
-                app:layout_constraintStart_toEndOf="@+id/editTextText"
-                app:layout_constraintTop_toTopOf="@+id/editTextText"
+                app:layout_constraintStart_toEndOf="@+id/gracz1"
+                app:layout_constraintTop_toTopOf="@+id/gracz1"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
@@ -88,11 +90,11 @@
                 android:layout_height="33dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginBottom="1dp"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextText2"
+                app:layout_constraintBottom_toBottomOf="@+id/gracz2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.529"
-                app:layout_constraintStart_toEndOf="@+id/editTextText"
-                app:layout_constraintTop_toTopOf="@+id/editTextText2"
+                app:layout_constraintStart_toEndOf="@+id/gracz2"
+                app:layout_constraintTop_toTopOf="@+id/gracz2"
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
         </androidx.constraintlayout.widget.ConstraintLayout>
