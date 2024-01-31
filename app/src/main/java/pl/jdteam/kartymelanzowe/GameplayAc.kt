@@ -1,11 +1,14 @@
 package pl.jdteam.kartymelanzowe
 
 import android.os.Bundle
+import android.view.View
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.view.animation.DecelerateInterpolator
 import androidx.activity.ComponentActivity
 import pl.jdteam.kartymelanzowe.databinding.ActivityGameplayBinding
 import kotlin.random.Random
+
 
 class GameplayAc : ComponentActivity() {
     private lateinit var binding: ActivityGameplayBinding
@@ -42,30 +45,46 @@ class GameplayAc : ComponentActivity() {
             }else{binding.karta.text = "Koniec Gry!"}
         }
 
-        binding.karta.setOnClickListener(){
-            if(lista1.isNotEmpty()){
-                if(lista1[losowe1]!=binding.karta.text){
+        binding.karta.setOnClickListener {
+            if (lista1.isNotEmpty()) {
+                if (lista1[losowe1] != binding.karta.text) {
                     binding.karta.startAnimation(animation1)
-                    if(check == 1){
-                        lista1.removeAt(losowe1)
-                    }
-                    if(lista1.size == 1){
-                        binding.karta.text = lista1[0]
-                        lista1.clear()
+                    animation1.setAnimationListener(object : Animation.AnimationListener {
+                        override fun onAnimationStart(animation: Animation?) {
+                            // Kod, który zostanie wykonany na początku animacji1 (opcjonalnie).
+                        }
 
+                        override fun onAnimationEnd(animation: Animation?) {
+                            // Kod, który zostanie wykonany po zakończeniu animacji1.
+                            // binding.karta.setVisibility(View.GONE)
 
+                            if (check == 1) {
+                                lista1.removeAt(losowe1)
+                            }
 
-                    }
-                    else{
-                        losowe1 = Random.nextInt(0, lista1.size-1)
-                        binding.karta.text = lista1[losowe1]
-                        check = 1
+                            if (lista1.size == 1) {
+                                binding.karta.text = lista1[0]
+                                lista1.clear()
+                            } else {
+                                losowe1 = Random.nextInt(0, lista1.size - 1)
+                                binding.karta.text = lista1[losowe1]
+                                check = 1
 
+                                // Rozpocznij animację2 po zakończeniu animacji1
+                                binding.karta.startAnimation(animation2)
+                            }
+                        }
 
-                    }
+                        override fun onAnimationRepeat(animation: Animation?) {
+                            // Kod, który zostanie wykonany podczas powtórzenia animacji1 (opcjonalnie).
+                        }
+                    })
                 }
-            }else{binding.karta.text = "Koniec Gry!"}
+            } else {
+                binding.karta.text = "Koniec Gry!"
+            }
         }
+
 
 
     }
