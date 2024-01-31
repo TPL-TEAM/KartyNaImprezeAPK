@@ -33,14 +33,14 @@
             android:theme="@style/Theme.AppCompat"
             />
         <activity
-            android:name=".StartAc"
+            android:name=".UzytkownicyAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
             />
 
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuAc"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"
             >

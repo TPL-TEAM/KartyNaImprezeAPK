@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import pl.jdteam.kartymelanzowe.databinding.ActivityMainBinding
 
-class MainActivity : ComponentActivity() {
+class MenuAc : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
