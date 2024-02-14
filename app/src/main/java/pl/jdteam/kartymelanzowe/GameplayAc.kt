@@ -50,13 +50,10 @@ class GameplayAc : ComponentActivity() {
                 if (lista1[losowe1] != binding.karta.text) {
                     binding.karta.startAnimation(animation1)
                     animation1.setAnimationListener(object : Animation.AnimationListener {
-                        override fun onAnimationStart(animation: Animation?) {
-                            // Kod, który zostanie wykonany na początku animacji1 (opcjonalnie).
-                        }
+                        override fun onAnimationStart(animation: Animation?) {}
 
                         override fun onAnimationEnd(animation: Animation?) {
-                            // Kod, który zostanie wykonany po zakończeniu animacji1.
-                            // binding.karta.setVisibility(View.GONE)
+
 
                             if (check == 1) {
                                 lista1.removeAt(losowe1)
@@ -75,9 +72,8 @@ class GameplayAc : ComponentActivity() {
                             }
                         }
 
-                        override fun onAnimationRepeat(animation: Animation?) {
-                            // Kod, który zostanie wykonany podczas powtórzenia animacji1 (opcjonalnie).
-                        }
+                        override fun onAnimationRepeat(animation: Animation?) {}
+
                     })
                 }
             } else {
