@@ -16,26 +16,31 @@
             android:name=".GameplayAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             />
         <activity
             android:name=".DodatkiAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             />
         <activity
             android:name=".UstawieniaAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             />
         <activity
             android:name=".GrajAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             />
         <activity
             android:name=".UzytkownicyAc"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             />
 
 
@@ -43,6 +48,7 @@
             android:name=".MenuAc"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"
+            android:screenOrientation='portrait'
             >
 
             <intent-filter>

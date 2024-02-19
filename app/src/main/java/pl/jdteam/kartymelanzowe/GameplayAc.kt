@@ -13,10 +13,16 @@ import kotlin.random.Random
 class GameplayAc : ComponentActivity() {
     private lateinit var binding: ActivityGameplayBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGameplayBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if(intent.hasExtra("DZIKIE_KARTY") == true){
+
+        }
+
         val array: Array<String> = resources.getStringArray(R.array.pytania)
         val lista = array.toCollection(ArrayList())
         var losowe = Random.nextInt(0, lista.size-1)
