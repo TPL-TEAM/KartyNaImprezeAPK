@@ -14,9 +14,11 @@ class UzytkownicyAc : ComponentActivity() {
         setContentView(binding.root)
 
         binding.start.setOnClickListener() {
-            val dzikie_karty_switch = binding.switch1.isChecked
+            var dzikie_karty_switch = binding.switch1.isChecked
+            var reverse_switch = binding.switch2.isChecked
             val startgra = Intent(applicationContext, GameplayAc::class.java)
             startgra.putExtra("DZIKIE_KARTY", dzikie_karty_switch)
+            startgra.putExtra("REVERSE", reverse_switch)
             startActivity(startgra)
         }
     }

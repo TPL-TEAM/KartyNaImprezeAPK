@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ogolne">
+        <item>Wszystkie osoby urodzone w styczniu pija</item>
+        <item>Wszystkie osoby urodzone w lutym pija</item>
+        <item>Wszystkie osoby urodzone w marcu pija</item>
+        <item>Wszystkie osoby urodzone w kwietniu pija</item>
+        <item>Wszystkie osoby urodzone w maju pija</item>
+        <item>Wszystkie osoby urodzone w czerwcu pija</item>
+        <item>Wszystkie osoby urodzone w lipcu pija</item>
+        <item>Wszystkie osoby urodzone w sierpniu pija</item>
+        <item>Wszystkie osoby urodzone w wrzesniu pija</item>
+        <item>Wszystkie osoby urodzone w pazdzierniku pija</item>
+        <item>Wszystkie osoby urodzone w listopadzie pija</item>
+        <item>Wszystkie osoby urodzone w grudniu pija</item>
+        <item>wszystkie osoby urodzone w dniach 1 15 graja w papier kamien norzyce przegrany pije</item>
+        <item>wszystkie osoby urodzone w dniach 16 31 graja w papier kamien norzyce przegrany pije</item>
+        <item>wszyscy posiadacze Aple pija</item>
+        <item>wszyscy posiadacze Androida pija</item>
+        <item>wszyscy posiadacze prawa jazdy pija</item>
+        <item>wszyscy pracujacy pija</item>
+        <item>wszyscy uczacy się pija</item>
+        <item>wszyscy palacy pija</item>
+        <item>wszyscy nie nie palacy pija</item>
+    </string-array>
+
+    <string-array name="dzikie_karty">
+        <item>Karta mocy dziewczyn  wszyscy chlopacy pija</item>
+        <item>Karta mocy chlopakow  wszystkie dziewczyny pija</item>
+        <item>karta mocy zajetych  wszystkie wolne osoby pija</item>
+        <item>karta mocy wolnych  wszystkie zajete osoby pija</item>
+    </string-array>
+</resources>

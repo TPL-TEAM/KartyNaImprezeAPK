@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pytania">
+        <item>opisz osobe po Twojej prawej stronie</item>
+        <item>dokończ tekst piosenki znów 18 mam</item>
+        <item>ile miałaś partnerów</item>
+        <item>w kim aktualnie się podkochujesz</item>
+        <item>czy żałujesz któregoś ze swoich związków</item>
+        <item>PYTANIE WYMYŚLA GRUPA</item>
+        <item>ile miałeś partnerek</item>
+        <item>kto twoim zdaniem jako pierwszy zostanie rodzicem</item>
+        <item>kto ma najwieksze szanse na wpadkę</item>
+        <item>Kto według Ciebie ma najwieksze ego</item>
+        <item>kto według CIebie ma największe powodzenie u płci przeciwnej</item>
+        <item>kto ma największe szanse na sukces?</item>
+        <item>kto ma najwieksze szanse na zostanie milionerem</item>
+        <item>Jakie imię nadasz swojemu przyszłemu dziecku</item>
+        <item>Jakiego ekstremalnego wyzwania chcesz się podjąć w swoim życiu</item>
+        <item>długie ale bogate życie czy krótkie ale bogate</item>
+        <item>czy według Ciebie istnieje przyjaźń damsko-męska</item>
+        <item>czy Twoim zdaniem sex na zgodę się sprawdza</item>
+        <item>czy kiedykolwiek byłeś z dziewczyną dla przyjemności seksualnych</item>
+        <item>czy kiedykolwiek byłaś z chłopakiem dla przyjemności seksualnych</item>
+        <item>gdy byłabyś gwiazdą porno to w jakiej kategorii</item>
+        <item>gdy byłbyś gwiazdą porno to w jakiej kategorii</item>
+        <item>wybierz jedną opcję wyruchać mamę/wyruchać siostrę</item>
+        <item>Lubisz Dawida Kwiatkowskiego jeśli tak to pijesz </item>
+    </string-array>
+</resources>

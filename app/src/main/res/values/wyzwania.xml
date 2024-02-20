@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wyzwania">
+        <item>rzut monetą jeśli wypadnie orzeł pijesz</item>
+        <item>tańcz bez muzyki przez 30s</item>
+        <item>udawaj wybraną osobę przez 30s</item>
+        <item>WYZWANIE WYMYŚLA GRUPA</item>
+        <item>napisz do ex że za nią tęsknisz</item>
+        <item>napisz do ex że za nim tęsknisz</item>
+        <item>pocałuj w szyję osobę po Twojej lewej stronie</item>
+        <item>przez następne 3 minuty możesz wyłącznie śpiewać</item>
+        <item>przez następne 3 minuty możesz użuwać wyłącznie słów na literę P</item>
+        <item>przez następne 3 minuty mów tylko rymując</item>
+        <item>pocałuj w pępek osobę po Twojej prawej stronie</item>
+        <item>zagraj z osobą po Twojej lewej stronie kto pierwszy mrugnie</item>
+        <item>Pokaż wybranemu graczowi płci przeciwnej coś co masz na sobie,a nie widać tego obecnie</item>
+        <item>grupa wymyśla Tobię ksywkę do końca gry</item>
+        <item>lecisz freestyle na wybranym beatcie przez resztę grupy</item>
+        <item>napisz do mamy że bardzo ją kochasz</item>
+        <item>masz 7 sekund na wymienienie 3 sposobów na nudę</item>
+        <item>masz 8 sekund na wymienienie 4 zielonych warzyw</item>
+        <item>masz 6 sekund na wymienienie 3 imimon męskich na literę M</item>
+        <item>wymień Twoim zdanie 3 najładnieszych influencerów</item>
+        <item>wymień 3 najlepsze pozycje seksualne według CIebie</item>
+        <item>powiedz osobie po lewej stronie co o niej myślisz</item>
+        <item>zdejmij jedną część ubrania</item>
+        <item>zagraj z wybraną osobą w kamień papier norzyce przegrany pije</item>
+    </string-array>
+</resources>

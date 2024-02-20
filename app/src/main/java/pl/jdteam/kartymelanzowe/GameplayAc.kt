@@ -19,72 +19,73 @@ class GameplayAc : ComponentActivity() {
         binding = ActivityGameplayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if(intent.hasExtra("DZIKIE_KARTY") == true){
-
+        if(intent.getBooleanExtra("DZIKIE_KARTY", false) == true){
+            val dzikie_karty: Array<String> = resources.getStringArray(R.array.dzikie_karty)
         }
 
-        val array: Array<String> = resources.getStringArray(R.array.pytania)
-        val lista = array.toCollection(ArrayList())
-        var losowe = Random.nextInt(0, lista.size-1)
+        val ogolne: Array<String> = resources.getStringArray(R.array.ogolne)
 
-        val array1: Array<String> = resources.getStringArray(R.array.wyzwania)
-        val lista1 = array1.toCollection(ArrayList())
+        val pytania: Array<String> = resources.getStringArray(R.array.pytania)
+        val pytania_lista = pytania.toCollection(ArrayList())
+        var losowe = Random.nextInt(0, pytania_lista.size-1)
+
+        val wyzwania: Array<String> = resources.getStringArray(R.array.wyzwania)
+        val wyzwania_lista = wyzwania.toCollection(ArrayList())
         var losowe1 = 1
         var check = 0
 
         val animation1 = AnimationUtils.loadAnimation(this, R.anim.zwieksz)
         val animation2 = AnimationUtils.loadAnimation(this, R.anim.zmniejsz)
 
-        binding.karta.text = lista[losowe]
+        binding.karta.text = pytania_lista[losowe]
         binding.nieWykonane.setOnClickListener(){
-            if(lista.isNotEmpty()){
-                lista.removeAt(losowe)
-                if(lista.size == 1){
-                    binding.karta.text = lista[0]
-                    lista.clear()
+            if(pytania_lista.isNotEmpty()){
+                pytania_lista.removeAt(losowe)
+                if(pytania_lista.size == 1){
+                    binding.karta.text = pytania_lista[0]
+                    pytania_lista.clear()
 
                 }
                 else{
-                    losowe = Random.nextInt(0, lista.size-1)
-                    binding.karta.text = lista[losowe]
+                    losowe = Random.nextInt(0, pytania_lista.size-1)
+                    binding.karta.text = pytania_lista[losowe]
                 }
             }else{binding.karta.text = "Koniec Gry!"}
         }
 
         binding.karta.setOnClickListener {
-            if (lista1.isNotEmpty()) {
-                if (lista1[losowe1] != binding.karta.text) {
-                    binding.karta.startAnimation(animation1)
-                    animation1.setAnimationListener(object : Animation.AnimationListener {
-                        override fun onAnimationStart(animation: Animation?) {}
+            if (intent.getBooleanExtra("REVERSE",false == true)){
+                if (wyzwania_lista.isNotEmpty()) {
+                    if (wyzwania_lista[losowe1] != binding.karta.text) {
+                        binding.karta.startAnimation(animation1)
+                        animation1.setAnimationListener(object : Animation.AnimationListener {
+                            override fun onAnimationStart(animation: Animation?) {}
 
-                        override fun onAnimationEnd(animation: Animation?) {
+                            override fun onAnimationEnd(animation: Animation?) {
+                                if (check == 1) {
+                                    wyzwania_lista.removeAt(losowe1)
+                                }
 
+                                if (wyzwania_lista.size == 1) {
+                                    binding.karta.startAnimation(animation2)
+                                    binding.karta.text = wyzwania_lista[0]
+                                    wyzwania_lista.clear()
 
-                            if (check == 1) {
-                                lista1.removeAt(losowe1)
+                                } else {
+                                    losowe1 = Random.nextInt(0, wyzwania_lista.size - 1)
+                                    binding.karta.startAnimation(animation2)
+                                    binding.karta.text = wyzwania_lista[losowe1]
+                                    check = 1
+                                }
                             }
 
-                            if (lista1.size == 1) {
-                                binding.karta.text = lista1[0]
-                                lista1.clear()
-                                binding.karta.startAnimation(animation2)
-                            } else {
-                                losowe1 = Random.nextInt(0, lista1.size - 1)
-                                binding.karta.text = lista1[losowe1]
-                                check = 1
+                            override fun onAnimationRepeat(animation: Animation?) {}
 
-                                // Rozpocznij animację2 po zakończeniu animacji1
-                                binding.karta.startAnimation(animation2)
-                            }
-                        }
-
-                        override fun onAnimationRepeat(animation: Animation?) {}
-
-                    })
+                        })
+                    }
+                } else {
+                    binding.karta.text = "Koniec Gry!"
                 }
-            } else {
-                binding.karta.text = "Koniec Gry!"
             }
         }
 
