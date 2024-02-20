@@ -22,13 +22,13 @@
         android:id="@+id/karta"
         android:layout_width="320dp"
         android:layout_height="450dp"
-        android:layout_marginTop="108dp"
         android:background="@drawable/ksztalt_1xml"
         android:text="Karta"
+        app:layout_constraintBottom_toTopOf="@+id/nie_wykonane"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/zmiana" />
 
     <Button
         android:id="@+id/ustawienia"

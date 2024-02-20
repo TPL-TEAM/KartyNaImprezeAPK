@@ -69,13 +69,15 @@ class GameplayAc : ComponentActivity() {
                                 binding.karta.text = lista1[0]
                                 lista1.clear()
                                 binding.karta.startAnimation(animation2)
+
                             } else {
                                 losowe1 = Random.nextInt(0, lista1.size - 1)
                                 binding.karta.text = lista1[losowe1]
                                 check = 1
+                                binding.karta.startAnimation(animation2)
 
                                 // Rozpocznij animację2 po zakończeniu animacji1
-                                binding.karta.startAnimation(animation2)
+
                             }
                         }
 
