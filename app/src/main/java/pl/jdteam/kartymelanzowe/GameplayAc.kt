@@ -1,5 +1,6 @@
 package pl.jdteam.kartymelanzowe
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AlphaAnimation
@@ -19,14 +20,18 @@ class GameplayAc : ComponentActivity() {
         binding = ActivityGameplayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if(intent.getBooleanExtra("DZIKIE_KARTY", false) == true){
-            val dzikie_karty: Array<String> = resources.getStringArray(R.array.dzikie_karty)
-        }
+
 
         val ogolne: Array<String> = resources.getStringArray(R.array.ogolne)
-
         val pytania: Array<String> = resources.getStringArray(R.array.pytania)
-        val pytania_lista = pytania.toCollection(ArrayList())
+        var pytania_lista = pytania.toCollection(ArrayList())
+
+        if(intent.getBooleanExtra("DZIKIE_KARTY", false) == true){
+            val dzikie_karty: Array<String> = resources.getStringArray(R.array.dzikie_karty)
+            var dzikie_karty_lista = dzikie_karty.toCollection(ArrayList())
+            pytania_lista.addAll(dzikie_karty_lista)
+        }
+
         var losowe = Random.nextInt(0, pytania_lista.size-1)
 
         val wyzwania: Array<String> = resources.getStringArray(R.array.wyzwania)
@@ -89,7 +94,10 @@ class GameplayAc : ComponentActivity() {
             }
         }
 
-
+        binding.ustawienia.setOnClickListener(){
+            val przelacz_ustawienia = Intent(applicationContext, UstawieniaAc::class.java)
+            startActivity(przelacz_ustawienia)
+        }
 
     }
 

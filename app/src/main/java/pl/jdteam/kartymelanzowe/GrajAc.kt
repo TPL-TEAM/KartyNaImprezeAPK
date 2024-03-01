@@ -22,5 +22,9 @@ class GrajAc : ComponentActivity() {
         binding.kat3.setOnClickListener(){
 
         }
+        binding.ustawienia.setOnClickListener(){
+            val przelacz_ustawienia = Intent(applicationContext, UstawieniaAc::class.java)
+            startActivity(przelacz_ustawienia)
+        }
     }
 }

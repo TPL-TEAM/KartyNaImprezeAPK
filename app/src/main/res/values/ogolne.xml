@@ -25,9 +25,9 @@
     </string-array>
 
     <string-array name="dzikie_karty">
-        <item>Karta mocy dziewczyn  wszyscy chlopacy pija</item>
-        <item>Karta mocy chlopakow  wszystkie dziewczyny pija</item>
-        <item>karta mocy zajetych  wszystkie wolne osoby pija</item>
-        <item>karta mocy wolnych  wszystkie zajete osoby pija</item>
+        <item>Karta mocy dziewczyn wszyscy chlopacy pija</item>
+        <item>Karta mocy chlopakow wszystkie dziewczyny pija</item>
+        <item>karta mocy zajetych wszystkie wolne osoby pija</item>
+        <item>karta mocy wolnych wszystkie zajete osoby pija</item>
     </string-array>
 </resources>
