@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameplayAc">
+    tools:context=".GameplayAc"
+    android:background="@drawable/backroundcolor">
+
+
 
     <Button
         android:id="@+id/nie_wykonane"
         android:layout_width="138dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/ksztalt_1xml"
         android:text="@string/niewykonane"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,14 +24,15 @@
     <Button
         android:id="@+id/karta"
         android:layout_width="320dp"
-        android:layout_height="450dp"
-        android:background="@drawable/ksztalt_1xml"
+        android:layout_height="500dp"
+        android:background="@drawable/karta3"
         android:text="Karta"
         app:layout_constraintBottom_toTopOf="@+id/nie_wykonane"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zmiana" />
+        app:layout_constraintTop_toBottomOf="@+id/zmiana"
+        app:layout_constraintVertical_bias="0.531" />
 
     <Button
         android:id="@+id/ustawienia"

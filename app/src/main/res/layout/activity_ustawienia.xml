@@ -29,10 +29,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
                 app:track="@drawable/track"
-                app:showText="true"
-                android:thumb="@drawable/xayoo"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,8 +41,10 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
@@ -54,7 +55,7 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
                 app:track="@drawable/track"
                 android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +68,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch3" />
 
@@ -78,7 +81,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch4" />
 
@@ -89,7 +94,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch5" />
 
@@ -100,7 +107,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch6" />
 
@@ -111,7 +120,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch7" />
 
@@ -122,7 +133,9 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch8" />
 
@@ -133,17 +146,12 @@
                 android:layout_marginStart="100dp"
                 android:text="@string/Menu"
                 android:paddingLeft="30dp"
-                android:paddingRight="30dp"
+                android:paddingRight="50dp"
+                app:track="@drawable/track"
+                android:thumb="@drawable/thumb"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch9" />
 
-            <SeekBar
-                android:id="@+id/seekBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/switch3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
