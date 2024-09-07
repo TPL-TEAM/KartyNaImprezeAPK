@@ -27,6 +27,7 @@
         android:layout_height="500dp"
         android:background="@drawable/karta3"
         android:text="Karta"
+        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/nie_wykonane"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
