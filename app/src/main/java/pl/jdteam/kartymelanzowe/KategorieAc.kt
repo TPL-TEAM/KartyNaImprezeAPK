@@ -3,13 +3,13 @@ package pl.jdteam.kartymelanzowe
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import pl.jdteam.kartymelanzowe.databinding.ActivityGrajBinding
+import pl.jdteam.kartymelanzowe.databinding.ActivityKategorieBinding
 
-class GrajAc : ComponentActivity() {
-    private lateinit var binding: ActivityGrajBinding
+class KategorieAc : ComponentActivity() {
+    private lateinit var binding: ActivityKategorieBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityGrajBinding.inflate(layoutInflater)
+        binding = ActivityKategorieBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.kat1.setOnClickListener(){
             val przelacz_gameplay = Intent(applicationContext, UzytkownicyAc::class.java)

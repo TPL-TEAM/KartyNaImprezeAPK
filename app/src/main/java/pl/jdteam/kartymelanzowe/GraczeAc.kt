@@ -3,14 +3,14 @@ package pl.jdteam.kartymelanzowe
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import pl.jdteam.kartymelanzowe.databinding.ActivityUzytkownicyBinding
+import pl.jdteam.kartymelanzowe.databinding.ActivityGraczeBinding
 
-class UzytkownicyAc : ComponentActivity() {
-    private lateinit var binding: ActivityUzytkownicyBinding
+class GraczeAc : ComponentActivity() {
+    private lateinit var binding: ActivityGraczeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityUzytkownicyBinding.inflate(layoutInflater)
+        binding = ActivityGraczeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.gracz1.text.isNotEmpty(){
             setVisible()

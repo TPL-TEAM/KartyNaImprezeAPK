@@ -3,13 +3,13 @@ package pl.jdteam.kartymelanzowe
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import pl.jdteam.kartymelanzowe.databinding.ActivityMainBinding
+import pl.jdteam.kartymelanzowe.databinding.ActivityMenuBinding
 
 class MenuAc : ComponentActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.graj.setOnClickListener(){
