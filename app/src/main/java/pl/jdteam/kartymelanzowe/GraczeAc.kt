@@ -12,9 +12,7 @@ class GraczeAc : ComponentActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGraczeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.gracz1.text.isNotEmpty(){
-            setVisible()
-        }
+
         binding.start.setOnClickListener() {
             var dzikie_karty_switch = binding.switch1.isChecked
             var reverse_switch = binding.switch2.isChecked
