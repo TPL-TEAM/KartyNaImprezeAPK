@@ -13,7 +13,7 @@ class MenuAc : ComponentActivity() {
         setContentView(binding.root)
 
         binding.graj.setOnClickListener(){
-            val przelacz_graj = Intent(applicationContext, GrajAc::class.java)
+            val przelacz_graj = Intent(applicationContext, KategorieAc::class.java)
             startActivity(przelacz_graj)
         }
         binding.ustawienia.setOnClickListener(){

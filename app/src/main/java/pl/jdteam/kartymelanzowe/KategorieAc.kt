@@ -12,11 +12,11 @@ class KategorieAc : ComponentActivity() {
         binding = ActivityKategorieBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.kat1.setOnClickListener(){
-            val przelacz_gameplay = Intent(applicationContext, UzytkownicyAc::class.java)
+            val przelacz_gameplay = Intent(applicationContext, GraczeAc::class.java)
             startActivity(przelacz_gameplay)
         }
         binding.kat2.setOnClickListener(){
-            val przelacz_gameplay = Intent(applicationContext, UzytkownicyAc::class.java)
+            val przelacz_gameplay = Intent(applicationContext, GraczeAc::class.java)
             startActivity(przelacz_gameplay)
         }
         binding.kat3.setOnClickListener(){
