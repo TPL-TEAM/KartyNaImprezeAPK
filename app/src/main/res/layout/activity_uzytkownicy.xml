@@ -36,11 +36,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433">
+        app:layout_constraintVertical_bias="0.44">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/gracz1"
+                android:layout_width="168dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="40dp"
+                android:autofillHints="Gracz"
+                android:ems="10"
+                android:hint="gracz"
+                android:inputType="text"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/gracz2"
@@ -56,20 +72,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gracz1" />
 
-            <EditText
-                android:id="@+id/gracz1"
-                android:layout_width="168dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="40dp"
-                android:ems="10"
-                android:inputType="text"
-                android:text="Gracz"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:autofillHints="Gracz" />
-
             <Switch
                 android:id="@+id/switch3"
                 android:layout_width="55dp"
@@ -82,6 +84,7 @@
                 app:layout_constraintHorizontal_bias="0.529"
                 app:layout_constraintStart_toEndOf="@+id/gracz1"
                 app:layout_constraintTop_toTopOf="@+id/gracz1"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch

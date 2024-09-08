@@ -26,4 +26,6 @@
         <item>zdejmij jedną część ubrania</item>
         <item>zagraj z wybraną osobą w kamień papier norzyce przegrany pije</item>
     </string-array>
+    <string-array name="wyzwania2">
+    </string-array>
 </resources>

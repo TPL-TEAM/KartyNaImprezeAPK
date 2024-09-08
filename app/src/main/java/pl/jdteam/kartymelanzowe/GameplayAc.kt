@@ -23,7 +23,7 @@ class GameplayAc : ComponentActivity() {
 
 
         val ogolne: Array<String> = resources.getStringArray(R.array.ogolne)
-        val pytania: Array<String> = resources.getStringArray(R.array.pytania)
+        val pytania: Array<String> = resources.getStringArray(R.array.pytaniaa)
         var pytania_lista = pytania.toCollection(ArrayList())
 
         if(intent.getBooleanExtra("DZIKIE_KARTY", false) == true){
