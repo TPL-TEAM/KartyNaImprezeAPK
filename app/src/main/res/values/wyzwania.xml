@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="wyzwania">
+    <string-array name="wyzwania_ogolne">
         <item>rzut monetą jeśli wypadnie orzeł pijesz</item>
         <item>tańcz bez muzyki przez 30s</item>
         <item>udawaj wybraną osobę przez 30s</item>
@@ -26,6 +26,21 @@
         <item>zdejmij jedną część ubrania</item>
         <item>zagraj z wybraną osobą w kamień papier norzyce przegrany pije</item>
     </string-array>
-    <string-array name="wyzwania2">
+    <string-array name="wyzwania_sport">
+        <item>wyzwania sport 1</item>
+        <item>wyzwania sport 2<item>
+        <item>wyzwania sport 3</item>
+    </string-array>
+
+    <string-array name="wyzwania_plus18">
+        <item>wyzwania plus18 1</item>
+        <item>wyzwania plus18 2</item>
+        <item>wyzwania plus18 3</item>
+    </string-array>
+
+    <string-array name="wyzwania_rodzinne">
+        <item>wyzwania rodzinne 1</item>
+        <item>wyzwania rodzinne 2</item>
+        <item>wyzwania rodzinne 3</item>
     </string-array>
 </resources>

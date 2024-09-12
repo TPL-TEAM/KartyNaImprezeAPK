@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="pytania">
+    <string-array name="pytania_ogolne">
         <item>opisz osobe po Twojej prawej stronie</item>
         <item>dokończ tekst piosenki znów 18 mam</item>
         <item>ile miałaś partnerów</item>
@@ -26,9 +26,23 @@
         <item>wybierz jedną opcję wyruchać mamę/wyruchać siostrę</item>
         <item>Lubisz Dawida Kwiatkowskiego jeśli tak to pijesz </item>
     </string-array>
-    <string-array name="pytaniaa">
-        <item>3</item>
-        <item>4</item>
-        <item>1</item>
+
+    <string-array name="pytania_sport">
+        <item>sport 1</item>
+        <item>sport 2</item>
+        <item>sport 3</item>
     </string-array>
+
+    <string-array name="pytania_plus18">
+        <item>plus18 1</item>
+        <item>plus18 2</item>
+        <item>plus18 2</item>
+    </string-array>
+
+    <string-array name="pytania_rodzinne">
+        <item>rodzinne 1</item>
+        <item>rodzinne 2</item>
+        <item>rodzinne 3</item>
+    </string-array>
+
 </resources>
